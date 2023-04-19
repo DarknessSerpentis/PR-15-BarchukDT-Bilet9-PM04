@@ -8,8 +8,14 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <TextBox Name="txt_login" Height="28" Width="291" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="40"/>
-        <PasswordBox Name="txt_password" Height="28" Width="291" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="40"/>
-        <xctk:MaskedTextBox Name="txt_email" Height="28" Width="291" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="40" Mask="a@a.a"/>
+        <TextBlock Name="lb_1" Text="Login" Height="28" Width="30" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="40"/>
+        <TextBox Name="txt_login" Height="28" Width="291" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="40" TextChanged="txt_login_TextChanged"/>
+        <TextBlock Name="tb_login" Height="28" Width="291" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="40"/>
+        <PasswordBox Name="txt_password" Height="28" Width="291" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="40" PasswordChanged="txt_password_PasswordChanged"/>
+        <TextBlock Name="lb_2" Text="Password" Height="28" Width="50" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="40"/>
+        <TextBlock Name="tb_password" Height="28" Width="291" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="40"/>
+        <xctk:MaskedTextBox Name="txt_email" Height="28" Width="291" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="40" Mask="aaaaaaa@aaaaa.aa"/>
+        <TextBlock Name="lb_3" Text="Email" Height="28" Width="30" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="40"/>
+        
     </Grid>
 </Window>
